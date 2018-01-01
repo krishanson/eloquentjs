@@ -17,3 +17,5 @@ console.log(countChar("kakkerlak", "k"));
 // → 4
 console.log(countChar("xyzZzy", "z"));
 // → 2
+console.log(countChar("TESTING", "t"));
+// → 0
