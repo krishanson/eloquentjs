@@ -21,3 +21,5 @@ console.log(countChar("TESTING", "t"));
 // → 0
 console.log(countChar("This is a test", "t"));
 // → 2
+console.log(countChar("This is a test", "T"));
+// → 1
