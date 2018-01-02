@@ -1,2 +1,2 @@
 # eloquentjs
-Samples from Eloquent JS
+Examples from Eloquent JS
