@@ -140,14 +140,19 @@ var range2 = function(start, end, step) {
 }
 
 console.log(range2("A", "Z", 1));
+// → ['A', 'B', 'C', ... 'Z']
 console.log(range2("Z", "A", 1));
+// → ['Z', 'Y', 'X', ... 'A']
 console.log(range2("A", "Z", 3));
+// → ['A', 'D', 'G', ... 'Y']
 
 
 console.log(range2(0, 25, 1));
-
+// → [0, 1, 2, 3, ... 25]
 console.log(range2(0, 25, 5));
+// → [0, 5, 10, 15, 20, 25]
 console.log(range2(20, 5, 5));
+// → [20, 15, 10, 5]
 
 // range test cases from above applied to range2()
 console.log(range2(1, 10));
