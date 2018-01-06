@@ -1,8 +1,8 @@
+// return array from start to end, inclusive, in step increments
+// supports both positive and negative step values
+// start greater than end implies negative step
+// default step value is 1 or -1
 function range(start, end, step) {
-    // return array from start to end, inclusive, in step increments
-    // supports both positive and negative step values
-    // start greater than end implies negative step
-    // default step value is 1 or -1
     var arr = [];
 
     if (start <= end) {
@@ -27,9 +27,9 @@ function range(start, end, step) {
     return arr;
 }
 
+// return sum of array of numbers
+// handles non-numeric array values by returning undefined
 function sum(arr) {
-    // return sum of array of numbers
-    // handles non-numeric array values by returning undefined
     var result = 0;
 
     while (arr.length > 0) {
@@ -88,7 +88,6 @@ console.log(sum(["a", "b", "c"]));
     A minor difference is that a specified step value must always be a positive value, and
     then start/end determine whether that step increments or decrements
  */
-
 var range2 = function(start, end, step) {
     var range = [];
     var typeofStart = typeof start;
