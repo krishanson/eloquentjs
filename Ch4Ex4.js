@@ -28,6 +28,8 @@ function deepEqual(x1, x2) {
 
 // test cases for deepEqual()
 var obj = {here: {is: "an"}, object: 2};
+var obj2 = obj;
+var obj3 = {here: {is: "an"}, object: 2};
 console.log(deepEqual(obj, obj));
 // → true
 console.log(deepEqual(obj, {here: 1, object: 2}));
@@ -42,3 +44,11 @@ console.log(deepEqual({}, {a: {}}));
 // → false
 console.log(deepEqual({a: {a: {b: {}}}}, {a: {a: {b: {}}}}));
 // → true
+console.log(deepEqual(obj, obj2));
+// → true
+console.log(obj === obj2);
+// → true
+console.log(deepEqual(obj, obj3));
+// → true
+console.log(obj === obj3);
+// → false
